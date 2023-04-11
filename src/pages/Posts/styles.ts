@@ -46,6 +46,20 @@ export const Form = styled.form`
   margin-top: 24px;
 `;
 
+export const FormUsername = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 24px;
+
+  label {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+  }
+`;
+
 export const UniquePost = styled.div`
   display: flex;
   flex-direction: column;

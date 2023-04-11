@@ -2,10 +2,10 @@ import { useState } from "react";
 import { Button } from "../../components/Button";
 import { EditIcon } from "../../components/Icons/EditIcon";
 import { TrashIcon } from "../../components/Icons/TrashIcon";
-import { Input } from "../../components/Input";
 import H1 from "../../components/Typhograpy/H1";
 import P from "../../components/Typhograpy/P";
 import * as S from "./styles";
+import InputBase from "../../components/InputBase";
 
 export const Posts = () => {
   const [openModalDelete, setOpenModalDelete] = useState(false);
@@ -25,8 +25,13 @@ export const Posts = () => {
           <S.InputData>
             <H1>What’s on your mind?</H1>
 
-            <Input label="Title" placeholder="Hello World" />
-            <Input label="Content" placeholder="Content Hele" />
+            <S.FormUsername>
+              <label>Title</label>
+              <InputBase placeholder="Hello World" />
+
+              <label>Content</label>
+              <InputBase placeholder="Content Hele" />
+            </S.FormUsername>
 
             <S.Section>
               <Button title="Create" />
@@ -153,8 +158,13 @@ export const Posts = () => {
           <S.BoxModal>
             <H1>Edit Item</H1>
 
-            <Input label="Title" placeholder="Hello World" />
-            <Input label="Content" placeholder="Content Hele" />
+            <S.FormUsername>
+              <label>Title</label>
+              <InputBase placeholder="Hello World" />
+
+              <label>Content</label>
+              <InputBase placeholder="Content Hele" />
+            </S.FormUsername>
 
             <S.Section>
               <Button
