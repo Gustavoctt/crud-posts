@@ -7,12 +7,9 @@ export const GlobalStyle = createGlobalStyle`
   box-sizing: border-box;
  }
 
- html{
-  max-width: 1440px;
-  margin: 0 160px;
- }
-
+ 
  body{
-  background: #FAFAFA;
+  background: #DDDDDD;
+  font-family: "Roboto", sans-serif;
  }
 `;
